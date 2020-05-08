@@ -1,0 +1,172 @@
+
+.chart_container {
+  width: 800px;
+  height: 500px;
+  border-radius: 8px;
+  background-color: #ededed;
+  
+}
+
+.chart_container .chart_body {
+  /* background-color: violet; */
+  width: 80%;
+  height: 80%;
+  margin-top:auto;
+  margin-bottom:auto;
+  position: relative;
+  top:10%;
+  margin: 0 auto;
+}
+
+.y_axis {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  /* height: 100%; */
+  margin: 0px !important;
+  bottom: 0px;
+}
+.y_axis li {
+  border-top: 1px dashed #adadad;
+  display: block;
+  height:0px;
+  width: 100%;
+  border-left: 1px solid #adadad;
+}
+
+.y_axis li span {
+  display: block;
+  font-size: 11px;
+  margin: -10px 0 0 -60px;
+  padding: 0 10px;
+  width: 40px;  
+}
+
+.x_axis{
+  height: 100%;
+  /* position: absolute; */
+  width: 100%;
+  margin: 0px !important;
+  bottom: 0px;
+}
+.x_axis li {
+  display: inline-block;
+  width: 45%;
+  height: 100%;
+}
+
+/** Chart Bar **/
+.barImage .rectangle{
+  width: 0px;
+  height: 100%;
+  margin: 0px auto 0;
+  position: relative;
+  top: 28px;
+}
+
+.barImage .rectangle .leftTilt{
+position: absolute;
+background-color: #0093a5;
+width: 50px;
+height: 0%;
+left: -50px;
+bottom: 15px;
+transform: skewY(30deg);
+}
+
+.barImage .rectangle .rightTilt:after{
+position: absolute;
+background-color: #1db9df;
+width: 50px;
+height: 58px;
+left: -26px;
+bottom: 15px;
+transform: skewX(41deg);
+content: '';
+top: -58px;
+}
+
+.barImage .rectangle .rightTilt{
+position: absolute;
+background-color: #1fb7cf;
+width: 50px;
+height: 0%;
+right: -50px;
+bottom: 15px;
+transform: skewY(-30deg);
+}
+/** rrrrrrrrrrrrrrrrrrrrrrr**/
+.n_x_axis{
+  height: 100%;
+  position: relative;
+  width: 100%;
+  margin: 0px !important;
+  /* bottom: 0px; */
+  padding-left: 40px;
+}
+.n_barImage {
+  width: 50%;
+  height: 0%;
+  position: absolute;
+  bottom: 0px;
+  transition: height 2s;
+  /* left: 0px; */
+}
+.n_bar_1 {
+  /* left: 20%; */
+  /* background: skyblue; */
+}
+.n_bar_2 {
+  left: 50%;
+  /* background: rosybrown; */
+}
+
+.n_rectangle {
+  width: 0px;
+  height: 100%;
+  margin: 0px auto 0;
+  position: relative;
+  top: 30px;
+}
+.n_leftTilt {
+position: absolute;
+background-color: #0093a5;
+width: 50px;
+height: 100%;
+left: -50px;
+bottom: 15px;
+transform: skewY(30deg);
+}
+.n_rightTilt {
+  position: absolute;
+background-color: #1fb7cf;
+width: 50px;
+height: 100%;
+right: -50px;
+bottom: 15px;
+transform: skewY(-30deg);
+}
+.n_rightTilt:after{
+  position: absolute;
+  background-color: #1db9df;
+  width: 50px;
+  height: 58px;
+  left: -26px;
+  bottom: 15px;
+  transform: skewX(41deg);
+  content: '';
+  top: -58px;
+  }
+
+  .n_bar_2 .n_leftTilt {
+    background-color: #0f4698;
+
+   }
+   .n_bar_2 .n_rightTilt {
+    background-color: #356bb1;
+    
+  }
+
+  .n_bar_2 .n_rightTilt:after {
+    background-color: #3685c7;
+  }
